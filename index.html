@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>Fortune Cookie</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="screen1 ">
+    <div class="content">
+      <h1>Qual é a sua sorte de hoje?</h1>
+      <p>Abra o biscoito e descubra!</p>
+      <form class="seeMyLuck" onsubmit="seeMyLuck(event)">
+        <button type="submit"><img src="Img/fortune-cookie.png" alt="fortune-cookie"></button>
+      </form>
+    </div>
+  </div>
+  <div class="screen2 hide ">
+    <div class="content">
+      <h2>Aqui está a sua sorte de hoje:</h2>
+      <div id="res">
+        
+      </div>
+      <img src="Img/opened-cookie.png" alt="abriu o bixcoito">
+      <button onclick="resetForm()">Abrir outro biscoito</button> 
+    </div>
+  </div>
+  <script src="scrip.js"></script>
+</body>
+</html>
